@@ -1,13 +1,14 @@
 # alfred-open-cisco-webex
+
 A MacOS Alfred workflow to open a predefined Webex session.
 
-Pre-requisites: 
+Pre-requisites:
 
-*  [Alfred](https://www.alfredapp.com/) - free
-*  [Alfred Power Pack](https://www.alfredapp.com/powerpack/buy/) - commericial, but I strongly recommend
-*  [Webex Workflow](https://github.com/jaroslawhartman/alfred-open-cisco-webex/releases) - download
+* [Alfred](https://www.alfredapp.com/) - free
+* [Alfred Power Pack](https://www.alfredapp.com/powerpack/buy/) - commericial, but I strongly recommend
+* [Webex Workflow](https://github.com/jaroslawhartman/alfred-open-cisco-webex/releases) - download
 
-# Introduction
+## Introduction
 
 It's pretty basic, but helps me to speed up a very common activity (which I always tend to do on very last second when a my conference call is about to start)...
 
@@ -21,22 +22,20 @@ Then press Enter to get the list of your web conferences, for example:
 
 Hit cursor down or up to select bridge you want to open and just press enter.
 
-# Installation
+## Installation
 
 After downloading the workflow, just doubleclick the file and it will get imported to your Alfred.
 
-# Configuration
+## Configuration
 
-Ok, how you could add your most frequently used Webex URLs to the list? Navigate to Alfred workflows, find Webex workflow and select _Open in Finder_:
+### Adding a new WebEx Conference
 
-![Alfred workflow](https://jaroslawhartman.github.io/alfred-open-cisco-webex/Cisco-Alfred-03.png)
+* Copy (Command-C) the WebEx link
+  * i.e. `https://webex-conferencing.webex.com/meet/jhartman`
+* Press Option-Space and type _webexadd_
+* Follow instructions
 
-Then open `configuration.txt` in your text editor:
+### Removing a WebEx Conference
 
-![Alfred workflow](https://jaroslawhartman.github.io/alfred-open-cisco-webex/Cisco-Alfred-04.png)
-
-In the file, set your URLs in format `<Name>|<URL>`, for example `Jarek|https://webex.com/joint/jarek.hartman`:
-
-![Alfred workflow](https://jaroslawhartman.github.io/alfred-open-cisco-webex/Cisco-Alfred-05.png)
-
-Save and done!
+* Press Option-Space and type _webexremove_
+* Select the conference you'd like removed and press Enter while holding Option
